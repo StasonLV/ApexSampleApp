@@ -7,13 +7,34 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class MainScreenViewController: UIViewController {
+    // MARK: - константы
+    let worker = FirebaseWorker()
+    let mainView = MainScreenView(frame: .zero)
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.addSubview(mainView)
+//        worker.fetch { [weak self] response in
+//            switch response {
+//            case .success(let response):
+//                DispatchQueue.main.async {
+//                    print(response)
+//                }
+//            case .failure(.connectionError):
+//                print("connect er")
+//            case .failure(.decodeError):
+//                print("decode er")
+//            }
+//        }
     }
 
-
+    override func viewWillLayoutSubviews() {
+        mainView.frame = CGRect(
+            x: 0,
+            y: 0,
+            width: view.frame.size.width,
+            height: view.frame.size.height
+        )
+    }
 }
-
