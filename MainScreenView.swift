@@ -20,6 +20,6 @@ final class MainScreenView: UIView {
     }
 
     private func setupMainView() {
-        backgroundColor = .red
+        backgroundColor = .cyan
     }
 }
