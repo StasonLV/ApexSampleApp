@@ -7,10 +7,10 @@
 
 import UIKit
 
-final class MainScreenViewController: UIViewController {
+final class CharacterScreenViewController: UIViewController {
     // MARK: - константы
     let worker = FirebaseWorker()
-    let mainView = MainScreenView(frame: .zero)
+    let mainView = CharacterScreenScreenView(frame: .zero)
 
     override func viewDidLoad() {
         super.viewDidLoad()

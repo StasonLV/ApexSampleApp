@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class MainScreenView: UIView {
+final class CharacterScreenScreenView: UIView {
     // MARK: - инициализаторы
     override init(frame: CGRect) {
         super.init(frame: frame)
